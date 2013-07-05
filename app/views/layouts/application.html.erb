@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Travel</title>
+  <%= stylesheet_link_tag "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+ </head>
+ <body screen_capture_injected="true">
+  <div id="t_top_header">
+   <div id="t_banner">
+    <%= image_tag("#{asset_path('11951366321777375945.jpg')}")%>
+   </div>
+  </div>
+  <div id="t_top_menu">
+   <div class="container marketing">
+    <div class="t_menu_detail">
+     <div class="t_menu_prt">
+      <%= link_to "", "/", :class => "t_project_name"%>
+     </div>
+     <div class="t_menu_prt">
+      <%= link_to "Vùng miền", "#"%>
+      <div class="t_menu_child">
+       <div class="t_submenu_child">
+        <a class="js-nav-item nav__item nav__submenu__item nav__submenu__item--hotels nav__submenu__link" href="http://www.lonelyplanet.com/hotels">Hotels</a>
+        <a class="js-nav-item nav__item nav__submenu__item nav__submenu__item--flights nav__submenu__link" href="http://www.lonelyplanet.com/flights/">Flights</a>
+        <a class="js-nav-item nav__item nav__submenu__item nav__submenu__item--adventure-tours nav__submenu__link" href="http://www.lonelyplanet.com/adventure-tours/">Adventure tours</a>
+        <a class="js-nav-item nav__item nav__submenu__item nav__submenu__item--sightseeing-tours nav__submenu__link" href="http://www.lonelyplanet.com/sightseeing-tours/">Sightseeing tours</a>
+       </div>
+      </div>
+     </div>
+     <div class="t_menu_prt">
+      <%= link_to "Tỉnh/Thành phố", "#"%>
+     </div>
+    </div>
+    <div class="t_menu_search">
+     <form action="#" class="bs-docs-example form-search" method="get">
+       <input type="text" class="input-medium search-query t_search_input">
+       <button type="submit" class="btn btn-info">Tìm
+       </button>
+     </form>
+    </div>
+   </div>
+  </div>
+  <div id="t_content">
+    <%= yield %>
+  </div>
+  <div id="t_bottom">
+   <div class="container marketing">
+    <footer>
+     <p class="pull-right">
+      <a href="#">Back to top</a>
+     </p>
+     <p>
+      Copyright © 2013 <%= link_to "X Vs Nik", "https://www.facebook.com/niick7"%>. All rights reserved.
+     </p>
+    </footer>
+   </div>
+  </div>
+ </body>
+</html>

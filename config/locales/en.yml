@@ -1,0 +1,6 @@
+#! /usr/local/bin/ruby
+# encoding: utf-8
+en:
+  hello: "Hello world"
+  blank: "không được trống"
+  uniqueness: "đã tồn tại"
